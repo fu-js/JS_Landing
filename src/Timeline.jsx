@@ -17,7 +17,7 @@ function Timeline() {
           <h5 class=" text-xl font-medium text-center capitalize md:text-left">
             Vòng mở đơn
           </h5>
-          <p class="text-center text-gray-400 md:text-left">
+          <p class="text-center text-gray-500 md:text-left">
             Mọi sinh viên FPT quan tâm đến JS Club sẽ điền đơn Đăng ký (gắn link
             vô đây) để gửi gắm nguyện vọng trở thành một phần của đại gia đình
             JS.
@@ -28,7 +28,7 @@ function Timeline() {
           <h5 class=" text-xl font-medium text-center capitalize md:text-left">
             Vòng phỏng vấn
           </h5>
-          <p class="text-center text-gray-400 md:text-left">
+          <p class="text-center text-gray-500 md:text-left">
             Các ứng viên đã qua vòng đơn sẽ được trải qua một buổi phỏng vấn để
             xem bản thân có phù hợp để tiếp tục đồng hành với JS không.
           </p>
@@ -38,7 +38,7 @@ function Timeline() {
           <h5 class=" text-xl font-medium text-center capitalize md:text-left">
             Vòng thử thách
           </h5>
-          <p class="text-center text-gray-400 md:text-left">
+          <p class="text-center text-gray-500 md:text-left">
             Là hành trình cuối cùng để các thí sinh chứng tỏ phẩm chất của mình
             trước khi chính thức trở thành JS-er
           </p>

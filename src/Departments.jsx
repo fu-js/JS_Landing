@@ -59,7 +59,7 @@ function Departments() {
                 {name}
               </div>
             </div>
-            <p className="text-neutral-500 max-w-lg mx-auto px-6 text-center md:text-left my-8">
+            <p className="text-gray-500 max-w-lg mx-auto px-6 text-center md:text-left my-8">
               <span className="text-red-600">{description.split}</span>
               {description}
             </p>

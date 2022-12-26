@@ -37,7 +37,7 @@ function Countdown() {
       >
         <div class="flex flex-col items-center justify-center space-y-4">
           <h2 class="day w-20 md:w-32 bg-slate-200 text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
-            {days}
+            {days < 10 ? `0${days}` : days}
           </h2>
           <small class="text-gray-600 uppercase text-xs tracking-widest">
             Ngày
@@ -45,7 +45,7 @@ function Countdown() {
         </div>
         <div class="flex flex-col items-center justify-center space-y-4">
           <h2 class="hour w-20 md:w-32 bg-slate-200 text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
-            {hours}
+            {hours < 10 ? `0${hours}` : hours}
           </h2>
           <small class="text-gray-600 uppercase text-xs tracking-widest">
             Giờ
@@ -53,7 +53,7 @@ function Countdown() {
         </div>
         <div class="flex flex-col items-center justify-center space-y-4">
           <h2 class="minute w-20 md:w-32 bg-slate-200 text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
-            {minutes}
+            {minutes < 10 ? `0${minutes}` : minutes}
           </h2>
           <small class="text-gray-600 uppercase text-xs tracking-widest">
             Phút
@@ -61,7 +61,7 @@ function Countdown() {
         </div>
         <div class="flex flex-col items-center justify-center space-y-4">
           <h2 class="second w-20 md:w-32 bg-slate-200 text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
-            {seconds}
+            {seconds < 10 ? `0${seconds}` : seconds}
           </h2>
           <small class="text-gray-600 uppercase text-xs tracking-widest">
             Giây
@@ -69,7 +69,7 @@ function Countdown() {
         </div>
       </div>
 
-      <button className="bg-red-600 mt-8 px-6 py-3 w-fit mx-auto rounded-lg text-white flex justify-center">
+      <button className="bg-red-600 hover:bg-red-700 mt-8 px-6 py-3 w-fit mx-auto rounded-lg text-white flex justify-center">
         <a href="">Đăng ký ngay</a>
       </button>
     </section>

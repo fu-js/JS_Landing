@@ -11,8 +11,8 @@ function Footer() {
           className="w-48 h-32 object-cover"
         />
         {/* Second column */}
-        <div class="flex flex-col space-y-4">
-          <div class="flex items-center space-x-3">
+        <div className="flex flex-col space-y-4">
+          <div className="flex items-center space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -22,24 +22,24 @@ function Footer() {
               className="w-6 h-6"
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                strokeLineCap="round"
+                strokeLineJoin="round"
                 d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
               />
             </svg>
-            <p class="max-w-xs">
+            <p className="max-w-xs">
               Đại học FPT, Khu Công nghệ cao Hòa Lạc, KM 29 Đại lộ Thăng Long,
               Hà Nội, Việt Nam.
             </p>
           </div>
-          <div class="flex items-center space-x-3">
+          <div className="flex items-center space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
                 stroke-linecap="round"
@@ -48,19 +48,19 @@ function Footer() {
               />
             </svg>
 
-            <p class="max-w-xs">jsclubfpt@gmail.com</p>
+            <p className="max-w-xs">jsclubfpt@gmail.com</p>
           </div>
         </div>
         {/* Third column */}
-        <div class="flex flex-col space-y-4">
-          <div class="flex items-center space-x-3">
+        <div className="flex flex-col space-y-4">
+          <div className="flex items-center space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
                 stroke-linecap="round"
@@ -76,17 +76,17 @@ function Footer() {
                   Nguyễn Phạm Nam Dũng
                 </span>
               </p>
-              <p class="max-w-xs"> 0375 470 304</p>
+              <p className="max-w-xs"> 0375 470 304</p>
             </div>
           </div>
-          <div class="flex items-center space-x-3">
+          <div className="flex items-center space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
                 stroke-linecap="round"
@@ -99,12 +99,12 @@ function Footer() {
                 Phó Chủ nhiệm:{" "}
                 <span className="text-red-600 font-medium"> Đào Xuân Quý</span>
               </p>
-              <p class="max-w-xs">0978 407 765</p>
+              <p className="max-w-xs">0978 407 765</p>
             </div>
           </div>
         </div>
         {/* Fourth column */}
-        <div class="flex space-x-4 justify-center">
+        <div className="flex space-x-4 justify-center">
           <a href="https://www.facebook.com/fu.jsclub">
             <svg
               xmlns="http://www.w3.org/2000/svg"
