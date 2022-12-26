@@ -24,13 +24,13 @@ function Departments() {
       name: "ban văn hóa",
       image: "/assets/departments/cultural.jpg",
       description:
-        "Ban Văn Hóa, , linh hồn của JS Club, giúp kết nối các thành viên trong CLB. Với vai trò là người truyền lửa cho CLB, các thành viên ban văn hóa luôn là lực lượng nòng cốt, trực tiếp chạy các sự kiện của JS và lên dây cót tinh thần cho các cuộc chơi.",
+        "Ban Văn Hóa - linh hồn của JS Club, giúp kết nối các thành viên trong CLB. Với vai trò là người truyền lửa cho CLB, các thành viên ban văn hóa luôn là lực lượng nòng cốt, trực tiếp chạy các sự kiện của JS và lên dây cót tinh thần cho các cuộc chơi.",
     },
     {
       name: "ban đối ngoại",
       image: "/assets/departments/external_relation.jpg",
       description:
-        "“Khéo léo”, “nhanh nhạy” và “hoạt bát” là những tính từ khi nhắc đến con người của Đối Ngoại. Nếu ban Văn hóa là sợi dây gắn kết thành viên trong JS thì Đối ngoại chính là cầu nối JS với các CLB cũng như tổ chức trong và ngoài phạm vi FPT.",
+        "Người Đối Ngoại của JS được miêu tả bằng những tính từ “Khéo léo”, “nhanh nhạy” và “hoạt bát”. Nếu ban Văn hóa là sợi dây gắn kết thành viên trong JS thì Đối ngoại chính là cầu nối JS với các CLB cũng như tổ chức trong và ngoài phạm vi FPT.",
     },
   ];
 
@@ -60,8 +60,10 @@ function Departments() {
               </div>
             </div>
             <p className="text-gray-500 max-w-lg mx-auto px-6 text-center md:text-left my-8">
-              <span className="text-red-600">{description.split}</span>
-              {description}
+              <span className="text-red-600 font-medium">
+                {description.split(" ").slice(0, 3).join(" ")}
+              </span>{" "}
+              {description.split(" ").slice(3).join(" ")}
             </p>
           </div>
         );
