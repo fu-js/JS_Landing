@@ -37,7 +37,7 @@ function Departments() {
   return (
     <div>
       <h2
-        class="my-6 text-3xl font-semibold uppercase text-red-600 tracking-wide"
+        class="my-6 text-3xl font-semibold uppercase text-red-600"
         id="timeline"
       >
         các ban

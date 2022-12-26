@@ -4,7 +4,7 @@ function Timeline() {
   return (
     <div>
       <h2
-        class="my-6 text-3xl font-semibold uppercase text-red-600 tracking-wider"
+        class="my-6 text-3xl font-semibold uppercase text-red-600"
         id="timeline"
       >
         Timeline
@@ -24,7 +24,7 @@ function Timeline() {
           </p>
         </div>
 
-        <div class="relative flex flex-col mt-24 p-6 space-y-4 bg-white rounded-lg md:mt-8 md:w-1/3">
+        <div class="relative flex flex-col mt-16 p-6 space-y-4 bg-white rounded-lg md:mt-8 md:w-1/3">
           <h5 class=" text-xl font-medium text-center capitalize md:text-left">
             Vòng phỏng vấn
           </h5>
@@ -34,7 +34,7 @@ function Timeline() {
           </p>
         </div>
 
-        <div class="relative flex flex-col mt-24 p-6 space-y-4 bg-white rounded-lg md:mt-16 md:w-1/3">
+        <div class="relative flex flex-col mt-16 p-6 space-y-4 bg-white rounded-lg md:mt-24 md:w-1/3">
           <h5 class=" text-xl font-medium text-center capitalize md:text-left">
             Vòng thử thách
           </h5>
