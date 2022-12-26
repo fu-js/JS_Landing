@@ -70,7 +70,7 @@ function Countdown() {
       </div>
 
       <button className="bg-red-600 hover:bg-red-700 mt-8 px-6 py-3 w-fit mx-auto rounded-lg text-white flex justify-center">
-        <a href="">Đăng ký ngay</a>
+        <a href="https://forms.gle/DSYf6KJC5sy5wd827">Đăng ký ngay</a>
       </button>
     </section>
   );
