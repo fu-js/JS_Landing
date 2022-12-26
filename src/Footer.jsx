@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-white">
-      <div className="flex flex-col md:flex-row md:space-x-16 space-y-20 md:space-y-0 mt-8 justify-center items-center">
+    <footer className="bg-white py-8 px-4 md:px-12 lg:px-16">
+      <div className="flex flex-col md:flex-row md:space-x-16 space-y-12 md:space-y-0 justify-center items-start">
         {/* First column */}
         <img
           src="/assets/JS.png"
@@ -11,8 +11,8 @@ function Footer() {
           className="w-48 h-32 object-cover"
         />
         {/* Second column */}
-        <div class="flex flex-col md:space-x-6 space-y-6 md:space-y-0">
-          <div class="flex items-start space-x-3">
+        <div class="flex flex-col space-y-4">
+          <div class="flex items-center space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -32,7 +32,7 @@ function Footer() {
               Hà Nội, Việt Nam.
             </p>
           </div>
-          <div class="space-y-4">
+          <div class="flex items-center space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -48,12 +48,12 @@ function Footer() {
               />
             </svg>
 
-            <p>JS Club - Japanese Software Engineers</p>
+            <p class="max-w-xs">jsclubfpt@gmail.com</p>
           </div>
         </div>
         {/* Third column */}
-        <div class="flex flex-col md:space-x-6 space-y-6 md:space-y-0">
-          <div class="flex items-start space-x-3">
+        <div class="flex flex-col space-y-4">
+          <div class="flex items-center space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -69,9 +69,17 @@ function Footer() {
               />
             </svg>
 
-            <p class="max-w-xs">Nguyễn Phạm Nam Dũng 0375 470 304</p>
+            <div>
+              <p>
+                Chủ nhiệm:{" "}
+                <span className="text-red-600 font-medium">
+                  Nguyễn Phạm Nam Dũng
+                </span>
+              </p>
+              <p class="max-w-xs"> 0375 470 304</p>
+            </div>
           </div>
-          <div class="flex items-start space-x-3">
+          <div class="flex items-center space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -86,12 +94,17 @@ function Footer() {
                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
               />
             </svg>
-
-            <p class="max-w-xs">Đào Xuân Quý 0978 407 765</p>
+            <div>
+              <p>
+                Phó Chủ nhiệm:{" "}
+                <span className="text-red-600 font-medium"> Đào Xuân Quý</span>
+              </p>
+              <p class="max-w-xs">0978 407 765</p>
+            </div>
           </div>
         </div>
         {/* Fourth column */}
-        <div class="flex space-x-3 justify-center">
+        <div class="flex space-x-4 justify-center">
           <a href="https://www.facebook.com/fu.jsclub">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -25,6 +25,12 @@ function Countdown() {
 
   return (
     <section>
+      <h2
+        class="my-6 text-3xl font-semibold uppercase text-red-600 tracking-wide"
+        id="timeline"
+      >
+        Thời gian ứng tuyển còn
+      </h2>
       <div
         className="flex flex-col md:flex-row justify-center items-center gap-8"
         role="timer"
