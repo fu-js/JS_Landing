@@ -53,7 +53,7 @@ function Departments() {
               <img
                 src={image}
                 alt={name}
-                className="w-full h-auto md:max-w-lg rounded-t-lg md:rounded-t-none image"
+                className="w-full h-auto md:max-w-lg rounded-t-lg md:rounded-t-none image odd:rounded-l-lg even:rounded-r-lg"
               />
               <div className="invisible group-hover/item:visible absolute inset-0 bg-red-400/50 flex justify-center items-center hover:cursor-pointer font-semibold text-white uppercase text-2xl">
                 {name}

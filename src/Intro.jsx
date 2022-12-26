@@ -20,7 +20,7 @@ function Intro() {
         theo chuyên ngành hẹp JS. Sau này, câu lạc bộ được mở rộng, trở thành
         nơi chia sẻ kiến thức của các sinh viên{" "}
         <span className="text-red-600 font-semibold">
-          YÊU THÍCH TIẾNG NHẬT và ĐAM MÊ LẬP TRÌNH.
+          yêu thích tiếng Nhật và đam mê lập trình.
         </span>
       </p>
 
