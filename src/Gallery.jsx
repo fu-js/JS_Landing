@@ -7,11 +7,10 @@ function Gallery() {
     trueOrder: false,
     mobileFirst: true,
     margin: 30,
-    columns: 3,
+    columns: 1,
     breakAt: {
       1000: 3,
       810: 2,
-      480: 1,
     },
   };
 
