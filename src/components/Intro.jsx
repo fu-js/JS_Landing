@@ -40,27 +40,25 @@ function Intro() {
             Bản.
           </span>{" "}
           Được thành lập vào tháng 2/2014, cái tên JS được đặt theo một chuyên
-          ngành hẹp của ngành Kỹ thuật phần mềm tại ĐH FPT. Từ những ngày đầu
+          ngành hẹp của ngành Kỹ thuật phần mềm tại Đại học FPT. Từ những ngày đầu
           thành lập, JS mang sứ mệnh trở thành một cộng đồng kết nối các sinh
-          viên theo chuyên ngành hẹp JS. Sau này, câu lạc bộ được mở rộng, trở
-          thành nơi chia sẻ kiến thức của các sinh viên{" "}
+          viên theo chuyên ngành hẹp JS. Sau này, câu lạc bộ được mở rộng và trở
+          thành nơi chia sẻ kiến thức cho các bạn sinh viên{" "}
           <span className="text-red-600 font-semibold">
             yêu thích tiếng Nhật và đam mê lập trình.
           </span>
         </p>
 
         <p>
-          {/* Chúng mình rất tự hào về những giá trị chúng mình đem lại cho thành
-          viên của mình. */}
-          JS Club cũng là Câu lạc bộ đầu tiên và duy nhất tại Đại
-          học FPT Hà Nội khi{" "}
+          JS Club cũng là câu lạc bộ đầu tiên và duy nhất tại Đại
+          học FPT Hà Nội có{" "}
           <span className="text-red-600 font-semibold">11 lần liên tiếp</span>{" "}
-          được vinh danh tại Lễ tôn vinh với danh hiệu Câu lạc bộ xuất sắc. Nổi
-          tiếng với danh hiệu{" "}
+          được vinh danh tại Lễ tôn vinh với danh hiệu Câu lạc bộ xuất sắc trong học kỳ. Nổi
+          tiếng với danh hiệu học thuật{" "}
           <span className="text-red-600 font-semibold">
             “CLB có nhiều cóc vàng nhất”
-          </span>, tuy nhiên không chỉ có mỗi học đâu nhé, JS cũng là “nơi vui chơi có
-          tổ chức” để thoả mãn nhu cầu “được chill” của các bạn trẻ.
+          </span>, nhưng JS Club không chỉ có mỗi học đâu nhé. Đây cũng là “nơi vui chơi có
+          tổ chức” để thoả mãn nhu cầu “được chill” của các bạn trẻ đấy.
         </p>
       </div>
     </motion.section>
