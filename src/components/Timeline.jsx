@@ -4,7 +4,9 @@ import { motion, useAnimation } from "framer-motion";
 import { evenBoxVariant } from "../utils/variantAnimation";
 
 function Timeline() {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({
+    threshold: 0.15,
+  });
   const control = useAnimation();
 
   useEffect(() => {

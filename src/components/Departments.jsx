@@ -37,7 +37,9 @@ const departments = [
 ];
 
 function Departments() {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({
+    threshold: 0.05,
+  });
   const control = useAnimation();
 
   useEffect(() => {

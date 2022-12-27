@@ -4,7 +4,9 @@ import { motion, useAnimation } from "framer-motion";
 import { evenBoxVariant } from "../utils/variantAnimation";
 
 function Intro() {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+  });
   const control = useAnimation();
 
   useEffect(() => {
