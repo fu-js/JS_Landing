@@ -34,11 +34,6 @@ function Hero() {
           className="text-white text-3xl md:text-6xl max-w-lg font-semibold text-center mx-auto leading-12"
           ref={titleRef}
         ></h1>
-      <button className="bg-red-600 hover:bg-red-700 mt-8 px-6 py-3 w-fit mx-auto rounded-lg text-white flex justify-center">
-        <a href="https://forms.gle/DSYf6KJC5sy5wd827" target="_blank">
-          Đăng ký ngay
-        </a>
-      </button>
       </div>
     </div>
   );
