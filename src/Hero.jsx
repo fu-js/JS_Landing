@@ -15,7 +15,7 @@ function Hero() {
   return (
     <div className="relative">
       <img
-        src="/assets/culture/2022_Summer_ClubDay.jpg"
+        src="/bg.jpg"
         alt="hero"
         className="h-screen w-full object-cover"
       />
