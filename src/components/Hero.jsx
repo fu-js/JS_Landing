@@ -23,7 +23,7 @@ function Hero() {
   return (
     <div className="relative">
       <img
-        src="/bg.jpg"
+        src="/bg.webp"
         alt="hero"
         className="h-screen w-full object-cover"
       />
