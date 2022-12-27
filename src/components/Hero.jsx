@@ -31,7 +31,7 @@ function Hero() {
 
       <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8">
         <h1
-          className="text-white text-3xl md:text-6xl max-w-lg font-semibold text-center mx-auto leading-12"
+          className="text-white text-3xl md:text-6xl max-w-2xl font-semibold text-center mx-auto leading-12"
           ref={titleRef}
         ></h1>
       </div>
