@@ -20,7 +20,7 @@ function App() {
       <Footer />
 
       {/* Floating button */}
-      <a
+      {/* <a
         href="https://forms.gle/DSYf6KJC5sy5wd827"
         target="_blank"
         className="peer"
@@ -48,7 +48,8 @@ function App() {
         className="fixed bottom-40 right-28 lg:right-36 invisible peer-hover:visible origin-bottom bg-red-600 text-white rounded-lg px-4 py-2"
       >
         Đăng ký
-      </a>
+      </a> */}
+
     </main>
   );
 }
