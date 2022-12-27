@@ -26,7 +26,7 @@ function Countdown() {
   return (
     <section>
       <h2
-        class="my-6 text-3xl font-semibold uppercase text-red-600 text-center"
+        className="my-6 text-3xl font-semibold uppercase text-red-600 text-center"
         id="timeline"
       >
         Thời gian ứng tuyển còn
@@ -35,35 +35,35 @@ function Countdown() {
         className="flex flex-col md:flex-row justify-center items-center gap-8"
         role="timer"
       >
-        <div class="flex flex-col items-center justify-center space-y-4">
-          <h2 class="day w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <h2 className="day w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {days < 10 ? `0${days}` : days}
           </h2>
-          <small class="text-gray-600 uppercase text-xs tracking-widest">
+          <small className="text-gray-600 uppercase text-xs tracking-widest">
             Ngày
           </small>
         </div>
-        <div class="flex flex-col items-center justify-center space-y-4">
-          <h2 class="hour w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <h2 className="hour w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {hours < 10 ? `0${hours}` : hours}
           </h2>
-          <small class="text-gray-600 uppercase text-xs tracking-widest">
+          <small className="text-gray-600 uppercase text-xs tracking-widest">
             Giờ
           </small>
         </div>
-        <div class="flex flex-col items-center justify-center space-y-4">
-          <h2 class="minute w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <h2 className="minute w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {minutes < 10 ? `0${minutes}` : minutes}
           </h2>
-          <small class="text-gray-600 uppercase text-xs tracking-widest">
+          <small className="text-gray-600 uppercase text-xs tracking-widest">
             Phút
           </small>
         </div>
-        <div class="flex flex-col items-center justify-center space-y-4">
-          <h2 class="second w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <h2 className="second w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {seconds < 10 ? `0${seconds}` : seconds}
           </h2>
-          <small class="text-gray-600 uppercase text-xs tracking-widest">
+          <small className="text-gray-600 uppercase text-xs tracking-widest">
             Giây
           </small>
         </div>

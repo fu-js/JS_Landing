@@ -56,7 +56,7 @@ function Departments() {
       animate={control}
     >
       <h2
-        class="my-6 text-3xl font-semibold uppercase text-red-600 text-center"
+        className="my-6 text-3xl font-semibold uppercase text-red-600 text-center"
         id="timeline"
       >
         các ban

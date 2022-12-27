@@ -24,7 +24,7 @@ function Intro() {
       animate={control}
     >
       <h2
-        class="mb-6 mt-20 text-3xl text-center font-semibold uppercase text-red-600"
+        className="mb-6 mt-20 text-3xl text-center font-semibold uppercase text-red-600"
         id="timeline"
       >
         Giới thiệU
