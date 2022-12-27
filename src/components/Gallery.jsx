@@ -19,43 +19,47 @@ const macyOptions = {
 const images = [
     {
       id: 1,
-      source: "/assets/academic/2022_Fall_CodingProject_chungket.jpg",
+      source: "/assets/academic/2022_Fall_CodingProject_chungket.jpg.webp",
     },
     {
       id: 2,
-      source: "/assets/academic/2022_Spring_AlgorithmArena.jpg",
+      source: "/assets/academic/2022_Spring_AlgorithmArena.jpg.webp",
     },
     {
       id: 3,
-      source: "/assets/others/up1.jpg",
+      source:
+        "/assets/others/up1.jpg.webp",
     },
     {
       id: 4,
-      source: "/assets/culture/2022_Spring_J-Venture_PhanDinhPhung.jpg",
+      source: "/assets/culture/2022_Spring_J-Venture_PhanDinhPhung.jpg.webp",
     },
     {
       id: 5,
-      source: "/assets/academic/2021_Fall_CodingProject_CK.jpg",
+      source: "/assets/academic/2021_Fall_CodingProject_CK.jpg.webp",
     },
     {
       id: 6,
-      source: "/assets/others/up2.jpg",
+      source:
+        "/assets/others/up2.jpg.webp",
     },
     {
       id: 7,
-      source: "/assets/academic/2019_Fall_Talkshow.jpg",
+      source: "/assets/academic/2019_Fall_Talkshow.jpg.webp",
     },
     {
       id: 8,
-      source: "/assets/others/w1.jpg",
+      source:
+        "/assets/others/w1.jpg.webp",
     },
     {
       id: 9,
-      source: "/assets/others/w2.jpg",
+      source:
+        "/assets/others/w2.jpg.webp",
     },
     {
       id: 10,
-      source: "/assets/culture/2021_Fall_Noel.jpg",
+      source: "/assets/culture/2021_Fall_Noel.jpg.webp",
     },
 ];
 
