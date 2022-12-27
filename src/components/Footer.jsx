@@ -78,7 +78,10 @@ function Footer() {
                   </a>
                 </span>
               </p>
-              <p className="max-w-xs"> 0375 470 304</p>
+              <p className="max-w-xs">
+                {/* 0375 470 304 */}
+                <a href="tel:0375470304">0375 470 304</a>
+                </p>
             </div>
           </div>
           <div className="flex items-center space-x-3">
@@ -105,7 +108,10 @@ function Footer() {
                   </a>
                   </span>
               </p>
-              <p className="max-w-xs">0978 407 765</p>
+              <p className="max-w-xs">
+                {/* 0978 407 765 */}
+                <a href="tel:0978407765">0978 407 765</a>
+              </p>
             </div>
           </div>
         </div>
