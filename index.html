@@ -5,9 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="/assets/logo.jpg" type="image/x-icon">
   <title>Japanese Software Engineers Club</title>
+  <link rel="stylesheet" href="./src/sakura.css" />
+  <script src="./src/sakura.js"></script>
 </head>
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <script>
+    const sakura = new Sakura('body', {
+      colors: [
+        {
+          gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+          gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+          gradientColorDegree: 120,
+        },
+        {
+          gradientColorStart: 'rgba(255,189,189)',
+          gradientColorEnd: 'rgba(227,170,181)',
+          gradientColorDegree: 120,
+        },
+        {
+          gradientColorStart: 'rgba(212,152,163)',
+          gradientColorEnd: 'rgba(242,185,196)',
+          gradientColorDegree: 120,
+        },
+      ],
+      fallSpeed: 2,
+      delay: 100,
+      minSize: 10
+    });
+    sakura.start()
+  </script>
 </body>
 </html>
