@@ -73,7 +73,7 @@ function Footer() {
               <p>
                 Chủ nhiệm:{" "}
                 <span className="text-red-600 font-medium">
-                  <a href="https://www.facebook.com/npndung28">
+                  <a href="https://www.facebook.com/npndung28" target="_blank">
                     Nguyễn Phạm Nam Dũng
                   </a>
                 </span>
@@ -103,7 +103,7 @@ function Footer() {
               <p>
                 Phó Chủ nhiệm:{" "}
                 <span className="text-red-600 font-medium">
-                  <a href="https://www.facebook.com/x.quy.203">
+                  <a href="https://www.facebook.com/x.quy.203" target="_blank">
                     Đào Xuân Quý
                   </a>
                   </span>
