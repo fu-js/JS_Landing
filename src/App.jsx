@@ -25,7 +25,7 @@ function App() {
         target="_blank"
         className="peer"
       >
-        <button className="w-16 h-16 rounded-full bg-red-600 flex justify-center items-center fixed bottom-48 right-8 md:right-16 text-white shadow-md">
+        <button className="w-16 h-16 rounded-full bg-red-600 hover:bg-red-700 flex justify-center items-center fixed bottom-40 right-8 md:right-16 text-white shadow-md">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -45,7 +45,7 @@ function App() {
       <a
         href="https://forms.gle/DSYf6KJC5sy5wd827"
         target="_blank"
-        className="fixed bottom-48 right-28 lg:right-36 invisible peer-hover:visible origin-bottom bg-red-600 text-white rounded-lg px-4 py-2"
+        className="fixed bottom-40 right-28 lg:right-36 invisible peer-hover:visible origin-bottom bg-red-600 text-white rounded-lg px-4 py-2"
       >
         Đăng ký
       </a>

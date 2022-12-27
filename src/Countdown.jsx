@@ -26,7 +26,7 @@ function Countdown() {
   return (
     <section>
       <h2
-        class="my-6 text-3xl font-semibold uppercase text-red-600 tracking-wide"
+        class="my-6 text-3xl font-semibold uppercase text-red-600 text-center"
         id="timeline"
       >
         Thời gian ứng tuyển còn

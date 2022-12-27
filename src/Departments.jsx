@@ -56,7 +56,7 @@ function Departments() {
       animate={control}
     >
       <h2
-        class="my-6 text-3xl font-semibold uppercase text-red-600"
+        class="my-6 text-3xl font-semibold uppercase text-red-600 text-center"
         id="timeline"
       >
         các ban
@@ -65,20 +65,20 @@ function Departments() {
         const { name, image, description } = department;
         return (
           <div
-            className="rounded-lg bg-white my-8 flex flex-col md:flex-row md:odd:flex-row-reverse items-center md:p-0"
+            className="rounded-lg bg-white my-8 flex flex-col md:flex-row md:odd:flex-row-reverse items-center md:p-0 image"
             key={name}
           >
             <div className="group/item relative overflow-hidden">
               <img
                 src={image}
                 alt={name}
-                className="w-full h-auto md:max-w-lg rounded-t-lg md:rounded-t-none basis-1/2 odd:rounded-l-lg even:rounded-r-lg group-hover/item:scale-110 duration-200"
+                className="w-full h-auto md:max-w-lg basis-1/2 group-hover/item:scale-110 duration-200"
               />
               <div className="invisible group-hover/item:visible absolute inset-0 bg-red-400/50 flex justify-center items-center hover:cursor-pointer font-semibold text-white uppercase text-2xl">
                 {name}
               </div>
             </div>
-            <p className="text-gray-500 max-w-lg mx-auto px-6 py-8 text-base lg:text-lg text-center md:text-left basis-1/2">
+            <p className="text-slate-500 max-w-lg mx-auto px-6 py-8 md:py-0 text-center md:text-left basis-1/2">
               <span className="text-red-600 font-medium">
                 {description.split(" ").slice(0, 3).join(" ")}
               </span>{" "}

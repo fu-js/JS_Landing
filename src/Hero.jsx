@@ -1,16 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import Typed from "typed.js";
 
 function Hero() {
-  const TITLE = "JS クラブ。日本の　エンジニア";
-  const [title, setTitle] = useState("");
+  const titleRef = useRef(null);
+  const typed = useRef(null);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setTitle(TITLE.slice(0, title.length + 1));
-    }, 100);
+    const options = {
+      strings: [
+        "JS クラブ。日本の　エンジニア",
+        "CLB KỸ SƯ PHẦN MỀM NHẬT BẢN - JS CLUB",
+      ],
+      typeSpeed: 150,
+      backSpeed: 150,
+    };
+    typed.current = new Typed(titleRef.current, options);
 
-    return () => clearInterval(timeout);
-  }, [title]);
+    // destroy typed instance to prevent memory leak
+    return () => typed.current.destroy();
+  }, []);
 
   return (
     <div className="relative">
@@ -22,9 +30,10 @@ function Hero() {
       <div className="absolute inset-0 bg-black/30"></div>
 
       <div className="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8">
-        <h1 className="text-white text-3xl md:text-6xl max-w-lg font-semibold text-center mx-auto leading-10">
-          {title}
-        </h1>
+        <h1
+          className="text-white text-3xl md:text-6xl max-w-lg font-semibold text-center mx-auto leading-12"
+          ref={titleRef}
+        ></h1>
       </div>
     </div>
   );

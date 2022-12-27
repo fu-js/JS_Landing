@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.image img {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+@media (min-width: 640px) {
+  .image:nth-child(even) img {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .image:nth-child(odd) img {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}

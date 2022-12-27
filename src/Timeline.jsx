@@ -23,7 +23,7 @@ function Timeline() {
       animate={control}
     >
       <h2
-        class="my-6 text-3xl font-semibold uppercase text-red-600"
+        class="my-6 text-3xl font-semibold uppercase text-red-600 text-center"
         id="timeline"
       >
         Timeline
@@ -39,7 +39,7 @@ function Timeline() {
           <small className="text-black font-semibold">
             26/12/2022 - 4/1/2023
           </small>
-          <p class="text-center text-gray-500 md:text-left">
+          <p class="text-center text-slate-500 md:text-left">
             Mọi sinh viên FPT quan tâm đến JS Club sẽ điền đơn Đăng ký (gắn link
             vô đây) để gửi gắm nguyện vọng trở thành một phần của đại gia đình
             JS.
@@ -53,7 +53,7 @@ function Timeline() {
           <small className="text-black font-semibold">
             6/1/2023 - 9/1/2023
           </small>
-          <p class="text-center text-gray-500 md:text-left">
+          <p class="text-center text-slate-500 md:text-left">
             Các ứng viên đã qua vòng đơn sẽ được trải qua một buổi phỏng vấn để
             xem bản thân có phù hợp để tiếp tục đồng hành với JS không.
           </p>
@@ -66,7 +66,7 @@ function Timeline() {
           <small className="text-black font-semibold">
             11/1/2023 - 31/3/2023
           </small>
-          <p class="text-center text-gray-500 md:text-left">
+          <p class="text-center text-slate-500 md:text-left">
             Là hành trình cuối cùng để các thí sinh chứng tỏ phẩm chất của mình
             trước khi chính thức trở thành JS-er
           </p>
