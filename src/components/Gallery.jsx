@@ -27,8 +27,7 @@ const images = [
     },
     {
       id: 3,
-      source:
-        "/assets/others/up1.jpg",
+      source: "/assets/others/up1.jpg",
     },
     {
       id: 4,
@@ -40,8 +39,7 @@ const images = [
     },
     {
       id: 6,
-      source:
-        "/assets/others/up2.jpg",
+      source: "/assets/others/up2.jpg",
     },
     {
       id: 7,
@@ -49,13 +47,11 @@ const images = [
     },
     {
       id: 8,
-      source:
-        "/assets/others/w1.jpg",
+      source: "/assets/others/w1.jpg",
     },
     {
       id: 9,
-      source:
-        "/assets/others/w2.jpg",
+      source: "/assets/others/w2.jpg",
     },
     {
       id: 10,
