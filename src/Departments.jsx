@@ -1,41 +1,60 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import { oddBoxVariant } from "./variantAnimation";
+
+const departments = [
+  {
+    name: "ban nội dung",
+    image: "/assets/departments/content.jpg",
+    description:
+      "Ban Nội Dung chính là một phần cấu tạo nên JS với nhiệm vụ lên nội dung, lên ý tưởng, concept cho các sự kiện. Làm việc ở ban Nội dung, bạn còn cần có một tinh thần vô cùng trách nhiệm, kỹ năng làm việc nhóm vì họ thường xuyên phải phối hợp với các phân ban khác để làm nên một chương trình thành công.",
+  },
+  {
+    name: "ban truyền thông",
+    image: "/assets/departments/media.jpg",
+    description:
+      "Ban Truyền Thông đóng vai trò như là “The Face” của CLB với nhiệm vụ tạo nên “giao diện” và đưa hình ảnh của CLB thông qua nền tảng xã hội đến với mọi người. Hoạt động với 3 mảng chính: viết bài, thiết kế và media, các bạn có thể thỏa sức sáng tạo, bắt trend với các concept khác nhau tại các phân ban.",
+  },
+  {
+    name: "ban chuyên môn",
+    image: "/assets/departments/expertise.jpg",
+    description:
+      "Ban Chuyên Môn là ban giúp duy trì và phát triển khả năng chuyên môn của tất cả các thành viên trong JS. Không những vậy, ban chuyên môn là nơi đào tạo các team thi đấu cho những cuộc thi lập trình cũng như trau dồi kiến thức và tổ chức các lớp training. Ngoài ra ban Chuyên Môn cũng tham gia tổ chức các sự kiện của JS với vai trò xây dựng những phần nội dung học thuật",
+  },
+  {
+    name: "ban văn hóa",
+    image: "/assets/departments/cultural.jpg",
+    description:
+      "Ban Văn Hóa - linh hồn của JS Club, giúp kết nối các thành viên trong CLB. Với vai trò là người truyền lửa cho CLB, các thành viên ban văn hóa luôn là lực lượng nòng cốt, trực tiếp chạy các sự kiện của JS và lên dây cót tinh thần cho các cuộc chơi.",
+  },
+  {
+    name: "ban đối ngoại",
+    image: "/assets/departments/external_relation.jpg",
+    description:
+      "Ban Đối Ngoại của JS được miêu tả bằng những tính từ “Khéo léo”, “nhanh nhạy” và “hoạt bát”. Nếu ban Văn hóa là sợi dây gắn kết thành viên trong JS thì Đối ngoại chính là cầu nối JS với các CLB cũng như tổ chức trong và ngoài phạm vi FPT.",
+  },
+];
 
 function Departments() {
-  const departments = [
-    {
-      name: "ban nội dung",
-      image: "/assets/departments/content.jpg",
-      description:
-        "Ban Nội Dung chính là một phần cấu tạo nên JS với nhiệm vụ lên nội dung, lên ý tưởng, concept cho các sự kiện. Làm việc ở ban Nội dung, bạn còn cần có một tinh thần vô cùng trách nhiệm, kỹ năng làm việc nhóm vì họ thường xuyên phải phối hợp với các phân ban khác để làm nên một chương trình thành công.",
-    },
-    {
-      name: "ban truyền thông",
-      image: "/assets/departments/media.jpg",
-      description:
-        "Ban Truyền Thông đóng vai trò như là “The Face” của CLB với nhiệm vụ tạo nên “giao diện” và đưa hình ảnh của CLB thông qua nền tảng xã hội đến với mọi người. Hoạt động với 3 mảng chính: viết bài, thiết kế và media, các bạn có thể thỏa sức sáng tạo, bắt trend với các concept khác nhau tại các phân ban.",
-    },
-    {
-      name: "ban chuyên môn",
-      image: "/assets/departments/expertise.jpg",
-      description:
-        "Ban Chuyên Môn là ban giúp duy trì và phát triển khả năng chuyên môn của tất cả các thành viên trong JS. Không những vậy, ban chuyên môn là nơi đào tạo các team thi đấu cho những cuộc thi lập trình cũng như trau dồi kiến thức và tổ chức các lớp training. Ngoài ra ban Chuyên Môn cũng tham gia tổ chức các sự kiện của JS với vai trò xây dựng những phần nội dung học thuật",
-    },
-    {
-      name: "ban văn hóa",
-      image: "/assets/departments/cultural.jpg",
-      description:
-        "Ban Văn Hóa - linh hồn của JS Club, giúp kết nối các thành viên trong CLB. Với vai trò là người truyền lửa cho CLB, các thành viên ban văn hóa luôn là lực lượng nòng cốt, trực tiếp chạy các sự kiện của JS và lên dây cót tinh thần cho các cuộc chơi.",
-    },
-    {
-      name: "ban đối ngoại",
-      image: "/assets/departments/external_relation.jpg",
-      description:
-        "Ban Đối Ngoại của JS được miêu tả bằng những tính từ “Khéo léo”, “nhanh nhạy” và “hoạt bát”. Nếu ban Văn hóa là sợi dây gắn kết thành viên trong JS thì Đối ngoại chính là cầu nối JS với các CLB cũng như tổ chức trong và ngoài phạm vi FPT.",
-    },
-  ];
+  const [ref, inView] = useInView();
+  const control = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
 
   return (
-    <div>
+    <motion.section
+      ref={ref}
+      variants={oddBoxVariant}
+      initial="hidden"
+      animate={control}
+    >
       <h2
         class="my-6 text-3xl font-semibold uppercase text-red-600"
         id="timeline"
@@ -68,7 +87,7 @@ function Departments() {
           </div>
         );
       })}
-    </div>
+    </motion.section>
   );
 }
 

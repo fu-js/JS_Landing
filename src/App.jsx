@@ -8,7 +8,7 @@ import Timeline from "./Timeline";
 
 function App() {
   return (
-    <main className="bg-slate-100 relative">
+    <main className="bg-slate-100 relative overflow-hidden">
       <Hero />
       <div className="max-w-7xl mx-auto px-4 md:px-12 lg:px-20 pb-20 space-y-20">
         <Intro />

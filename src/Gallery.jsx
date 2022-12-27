@@ -1,20 +1,22 @@
 import React, { useEffect } from "react";
 import Macy from "macy";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import { oddBoxVariant } from "../utils/variantAnimation";
 
-function Gallery() {
-  const macyOptions = {
-    container: "#gallery-grid",
-    trueOrder: false,
-    mobileFirst: true,
-    margin: 30,
-    columns: 1,
-    breakAt: {
-      1000: 3,
-      810: 2,
-    },
-  };
+const macyOptions = {
+  container: "#gallery-grid",
+  trueOrder: false,
+  mobileFirst: true,
+  margin: 30,
+  columns: 1,
+  breakAt: {
+    1000: 3,
+    810: 2,
+  },
+};
 
-  const images = [
+const images = [
     {
       id: 1,
       source: "/assets/academic/2022_Fall_CodingProject_chungket.jpg",
@@ -26,7 +28,7 @@ function Gallery() {
     {
       id: 3,
       source:
-        "/up1.jpg",
+        "/assets/others/up1.jpg",
     },
     {
       id: 4,
@@ -39,7 +41,7 @@ function Gallery() {
     {
       id: 6,
       source:
-        "/up2.jpg",
+        "/assets/others/up2.jpg",
     },
     {
       id: 7,
@@ -48,29 +50,49 @@ function Gallery() {
     {
       id: 8,
       source:
-        "/assets/w1.jpg",
+        "/assets/others/w1.jpg",
     },
     {
       id: 9,
       source:
-        "/assets/w2.jpg",
+        "/assets/others/w2.jpg",
     },
     {
       id: 10,
       source: "/assets/culture/2021_Fall_Noel.jpg",
     },
-  ];
+];
+
+function Gallery() {
+  const [ref, inView] = useInView({
+    threshold: 0.05,
+  });
+  const control = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
 
   useEffect(() => {
     new Macy(macyOptions);
   }, []);
 
   return (
-    <div id="gallery-grid">
+    <motion.section
+      id="gallery-grid"
+      ref={ref}
+      variants={oddBoxVariant}
+      initial="hidden"
+      animate={control}
+    >
       {images.map((image) => (
         <img src={image.source} alt="" key={image.id} className="rounded-md" />
       ))}
-    </div>
+    </motion.section>
   );
 }
 

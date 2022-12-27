@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import { evenBoxVariant } from "./variantAnimation";
 
 function Intro() {
+  const [ref, inView] = useInView();
+  const control = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
-    <div className="space-y-4">
+    <motion.section
+      className="space-y-4"
+      ref={ref}
+      variants={evenBoxVariant}
+      initial="hidden"
+      animate={control}
+    >
       <h2
         class="my-6 text-3xl font-semibold uppercase text-red-600"
         id="timeline"
@@ -37,7 +57,7 @@ function Intro() {
         , tuy nhiên không chỉ có mỗi học đâu nhé, JS cũng là “nơi vui chơi có tổ
         chức” để thoả mãn nhu cầu “được chill” của các bạn trẻ.
       </p>
-    </div>
+    </motion.section>
   );
 }
 
