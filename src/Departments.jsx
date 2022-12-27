@@ -30,7 +30,7 @@ function Departments() {
       name: "ban đối ngoại",
       image: "/assets/departments/external_relation.jpg",
       description:
-        "Người Đối Ngoại của JS được miêu tả bằng những tính từ “Khéo léo”, “nhanh nhạy” và “hoạt bát”. Nếu ban Văn hóa là sợi dây gắn kết thành viên trong JS thì Đối ngoại chính là cầu nối JS với các CLB cũng như tổ chức trong và ngoài phạm vi FPT.",
+        "Ban Đối Ngoại của JS được miêu tả bằng những tính từ “Khéo léo”, “nhanh nhạy” và “hoạt bát”. Nếu ban Văn hóa là sợi dây gắn kết thành viên trong JS thì Đối ngoại chính là cầu nối JS với các CLB cũng như tổ chức trong và ngoài phạm vi FPT.",
     },
   ];
 
@@ -49,17 +49,17 @@ function Departments() {
             className="rounded-lg bg-white my-8 flex flex-col md:flex-row md:odd:flex-row-reverse items-center md:p-0"
             key={name}
           >
-            <div className="group/item relative">
+            <div className="group/item relative overflow-hidden">
               <img
                 src={image}
                 alt={name}
-                className="w-full h-auto md:max-w-lg rounded-t-lg md:rounded-t-none image odd:rounded-l-lg even:rounded-r-lg"
+                className="w-full h-auto md:max-w-lg rounded-t-lg md:rounded-t-none basis-1/2 odd:rounded-l-lg even:rounded-r-lg group-hover/item:scale-110 duration-200"
               />
               <div className="invisible group-hover/item:visible absolute inset-0 bg-red-400/50 flex justify-center items-center hover:cursor-pointer font-semibold text-white uppercase text-2xl">
                 {name}
               </div>
             </div>
-            <p className="text-gray-500 max-w-lg mx-auto px-6 text-center md:text-left my-8">
+            <p className="text-gray-500 max-w-lg mx-auto px-6 py-8 text-base lg:text-lg text-center md:text-left basis-1/2">
               <span className="text-red-600 font-medium">
                 {description.split(" ").slice(0, 3).join(" ")}
               </span>{" "}

@@ -9,7 +9,7 @@ function Intro() {
       >
         Giới thiệU
       </h2>
-      <p className="text-center md:text-left text-gray-500 mt-20">
+      <p className="text-center md:text-left text-gray-500 mt-20 text-lg">
         JS Club là tên viết tắt của{" "}
         <span className="text-red-600 font-semibold">
           Japanese Software Engineers Club – Câu lạc bộ Kỹ sư phần mềm Nhật Bản.
@@ -24,7 +24,7 @@ function Intro() {
         </span>
       </p>
 
-      <p className="text-center md:text-left text-gray-500">
+      <p className="text-center md:text-left text-gray-500 text-lg">
         Chúng mình rất tự hào về những giá trị chúng mình đem lại cho thành viên
         của mình. JS Club cũng là Câu lạc bộ đầu tiên và duy nhất tại Đại học
         FPT Hà Nội khi{" "}
