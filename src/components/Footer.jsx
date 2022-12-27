@@ -73,7 +73,9 @@ function Footer() {
               <p>
                 Chủ nhiệm:{" "}
                 <span className="text-red-600 font-medium">
-                  Nguyễn Phạm Nam Dũng
+                  <a href="https://www.facebook.com/npndung28">
+                    Nguyễn Phạm Nam Dũng
+                  </a>
                 </span>
               </p>
               <p className="max-w-xs"> 0375 470 304</p>
@@ -97,7 +99,11 @@ function Footer() {
             <div>
               <p>
                 Phó Chủ nhiệm:{" "}
-                <span className="text-red-600 font-medium"> Đào Xuân Quý</span>
+                <span className="text-red-600 font-medium">
+                  <a href="https://www.facebook.com/x.quy.203">
+                    Đào Xuân Quý
+                  </a>
+                  </span>
               </p>
               <p className="max-w-xs">0978 407 765</p>
             </div>
