@@ -53,7 +53,7 @@ function Intro() {
           Chúng mình rất tự hào về những giá trị chúng mình đem lại cho thành
           viên của mình. JS Club cũng là Câu lạc bộ đầu tiên và duy nhất tại Đại
           học FPT Hà Nội khi{" "}
-          <span className="text-red-600 font-semibold">10 lần liên tiếp</span>{" "}
+          <span className="text-red-600 font-semibold">11 lần liên tiếp</span>{" "}
           được vinh danh tại Lễ tôn vinh với danh hiệu Câu lạc bộ xuất sắc. Nổi
           tiếng với danh hiệu{" "}
           <span className="text-red-600 font-semibold">
