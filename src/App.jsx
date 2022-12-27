@@ -16,7 +16,6 @@ function App() {
         <Departments />
         <Timeline />
         <Gallery />
-        <Countdown />
       </div>
       <Footer />
 
