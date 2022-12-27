@@ -39,7 +39,7 @@ function Countdown() {
           <h2 className="day w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {days < 10 ? `0${days}` : days}
           </h2>
-          <small className="text-gray-600 uppercase text-xs tracking-widest">
+          <small className="text-gray-600 uppercase text-sm tracking-widest">
             Ngày
           </small>
         </div>
@@ -47,7 +47,7 @@ function Countdown() {
           <h2 className="hour w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {hours < 10 ? `0${hours}` : hours}
           </h2>
-          <small className="text-gray-600 uppercase text-xs tracking-widest">
+          <small className="text-gray-600 uppercase text-sm tracking-widest">
             Giờ
           </small>
         </div>
@@ -55,7 +55,7 @@ function Countdown() {
           <h2 className="minute w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {minutes < 10 ? `0${minutes}` : minutes}
           </h2>
-          <small className="text-gray-600 uppercase text-xs tracking-widest">
+          <small className="text-gray-600 uppercase text-sm tracking-widest">
             Phút
           </small>
         </div>
@@ -63,7 +63,7 @@ function Countdown() {
           <h2 className="second w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {seconds < 10 ? `0${seconds}` : seconds}
           </h2>
-          <small className="text-gray-600 uppercase text-xs tracking-widest">
+          <small className="text-gray-600 uppercase text-sm tracking-widest">
             Giây
           </small>
         </div>
