@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import { oddBoxVariant } from "./variantAnimation";
+import { oddBoxVariant } from "../utils/variantAnimation";
 
 const departments = [
   {
@@ -32,7 +32,7 @@ const departments = [
     name: "ban đối ngoại",
     image: "/assets/departments/external_relation.jpg",
     description:
-      "Ban Đối Ngoại của JS được miêu tả bằng những tính từ “Khéo léo”, “nhanh nhạy” và “hoạt bát”. Nếu ban Văn hóa là sợi dây gắn kết thành viên trong JS thì Đối ngoại chính là cầu nối JS với các CLB cũng như tổ chức trong và ngoài phạm vi FPT.",
+      "Ban Đối ngoại là nơi quy tụ những thành viên “ngầu” và “chất như nước cất”. Là ban nắm giữ nguồn lực tài chính của CLB, ban Đối ngoại có “quyền lực” vô cùng to lớn. Nếu ban Văn hóa là sợi dây gắn kết thành viên trong JS thì Đối ngoại chính là cầu nối JS với các CLB trong và ngoài trường. Hơn nữa, thành viên ban Đối ngoại còn có cơ hội làm việc trực tiếp và mở rộng quan hệ với các doanh nghiệp.",
   },
 ];
 

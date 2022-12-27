@@ -36,7 +36,7 @@ function Countdown() {
         role="timer"
       >
         <div class="flex flex-col items-center justify-center space-y-4">
-          <h2 class="day w-20 md:w-32 bg-slate-200 text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
+          <h2 class="day w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {days < 10 ? `0${days}` : days}
           </h2>
           <small class="text-gray-600 uppercase text-xs tracking-widest">
@@ -44,7 +44,7 @@ function Countdown() {
           </small>
         </div>
         <div class="flex flex-col items-center justify-center space-y-4">
-          <h2 class="hour w-20 md:w-32 bg-slate-200 text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
+          <h2 class="hour w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {hours < 10 ? `0${hours}` : hours}
           </h2>
           <small class="text-gray-600 uppercase text-xs tracking-widest">
@@ -52,7 +52,7 @@ function Countdown() {
           </small>
         </div>
         <div class="flex flex-col items-center justify-center space-y-4">
-          <h2 class="minute w-20 md:w-32 bg-slate-200 text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
+          <h2 class="minute w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {minutes < 10 ? `0${minutes}` : minutes}
           </h2>
           <small class="text-gray-600 uppercase text-xs tracking-widest">
@@ -60,7 +60,7 @@ function Countdown() {
           </small>
         </div>
         <div class="flex flex-col items-center justify-center space-y-4">
-          <h2 class="second w-20 md:w-32 bg-slate-200 text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
+          <h2 class="second w-20 md:w-32 bg-white text-red-600 text-center text-softRed text-3xl md:text-6xl py-6 px-4 rounded-md">
             {seconds < 10 ? `0${seconds}` : seconds}
           </h2>
           <small class="text-gray-600 uppercase text-xs tracking-widest">
@@ -70,7 +70,9 @@ function Countdown() {
       </div>
 
       <button className="bg-red-600 hover:bg-red-700 mt-8 px-6 py-3 w-fit mx-auto rounded-lg text-white flex justify-center">
-        <a href="https://forms.gle/DSYf6KJC5sy5wd827">Đăng ký ngay</a>
+        <a href="https://forms.gle/DSYf6KJC5sy5wd827" target="_blank">
+          Đăng ký ngay
+        </a>
       </button>
     </section>
   );

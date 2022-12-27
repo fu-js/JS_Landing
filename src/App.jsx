@@ -1,10 +1,10 @@
-import Countdown from "./Countdown";
-import Departments from "./Departments";
-import Footer from "./Footer";
-import Gallery from "./Gallery";
-import Hero from "./Hero";
-import Intro from "./Intro";
-import Timeline from "./Timeline";
+import Countdown from "./components/Countdown";
+import Departments from "./components/Departments";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+import Hero from "./components/Hero";
+import Intro from "./components/Intro";
+import Timeline from "./components/Timeline";
 
 function App() {
   return (
