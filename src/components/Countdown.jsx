@@ -29,7 +29,7 @@ function Countdown() {
         className="my-6 text-3xl font-semibold uppercase text-red-600 text-center"
         id="timeline"
       >
-        Thời gian ứng tuyển còn
+        Thời gian mở đơn còn
       </h2>
       <div
         className="flex flex-col md:flex-row justify-center items-center gap-8"

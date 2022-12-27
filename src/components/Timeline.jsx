@@ -42,9 +42,15 @@ function Timeline() {
             26/12/2022 - 4/1/2023
           </small>
           <p className="text-slate-500">
-            Mọi sinh viên FPT quan tâm đến JS Club sẽ điền đơn Đăng ký (gắn link
-            vô đây) để gửi gắm nguyện vọng trở thành một phần của đại gia đình
-            JS.
+            Mọi sinh viên FPT quan tâm đến JS Club sẽ điền đơn{" "}
+            <a
+              href="https://forms.gle/DSYf6KJC5sy5wd827"
+              target="_blank"
+              className="text-red-600 font-medium"
+            >
+              đăng ký
+            </a>{" "}
+            để gửi gắm nguyện vọng trở thành một phần của đại gia đình JS.
           </p>
         </div>
 
