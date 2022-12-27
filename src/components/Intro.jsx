@@ -50,16 +50,16 @@ function Intro() {
         </p>
 
         <p>
-          Chúng mình rất tự hào về những giá trị chúng mình đem lại cho thành
-          viên của mình. JS Club cũng là Câu lạc bộ đầu tiên và duy nhất tại Đại
+          {/* Chúng mình rất tự hào về những giá trị chúng mình đem lại cho thành
+          viên của mình. */}
+          JS Club cũng là Câu lạc bộ đầu tiên và duy nhất tại Đại
           học FPT Hà Nội khi{" "}
           <span className="text-red-600 font-semibold">11 lần liên tiếp</span>{" "}
           được vinh danh tại Lễ tôn vinh với danh hiệu Câu lạc bộ xuất sắc. Nổi
           tiếng với danh hiệu{" "}
           <span className="text-red-600 font-semibold">
-            “CLB có nhiều cóc vàng nhất”{" "}
-          </span>{" "}
-          , tuy nhiên không chỉ có mỗi học đâu nhé, JS cũng là “nơi vui chơi có
+            “CLB có nhiều cóc vàng nhất”
+          </span>, tuy nhiên không chỉ có mỗi học đâu nhé, JS cũng là “nơi vui chơi có
           tổ chức” để thoả mãn nhu cầu “được chill” của các bạn trẻ.
         </p>
       </div>

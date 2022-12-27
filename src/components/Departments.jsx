@@ -61,7 +61,7 @@ function Departments() {
         className="my-6 text-3xl font-semibold uppercase text-red-600 text-center"
         id="timeline"
       >
-        các ban
+        Giới thiệu các ban
       </h2>
       {departments.map((department) => {
         const { name, image, description } = department;
