@@ -25,6 +25,7 @@ function Hero() {
       <img
         src="/bg.webp"
         alt="hero"
+        fetchpriority="high"
         className="h-screen w-full object-cover"
       />
       <div className="absolute inset-0 bg-black/30"></div>
