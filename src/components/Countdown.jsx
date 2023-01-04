@@ -9,7 +9,8 @@ function Countdown() {
   const deadline = "January, 5, 2023";
 
   const getTime = () => {
-    const time = Date.parse(deadline) - Date.now();
+    // const time = Date.parse(deadline) - Date.now();
+    const time = 0;
 
     setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
     setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
