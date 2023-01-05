@@ -70,11 +70,20 @@ function Countdown() {
         </div>
       </div>
 
-      <button className="bg-red-600 hover:bg-red-700 mt-8 px-6 py-3 w-fit mx-auto rounded-lg text-white flex justify-center">
+      {/* <button className="bg-red-600 hover:bg-red-700 mt-8 px-6 py-3 w-fit mx-auto rounded-lg text-white flex justify-center">
         <a href="https://forms.gle/DSYf6KJC5sy5wd827" target="_blank">
           Đăng ký ngay
         </a>
       </button>
+      change to text instead of button:
+      "Thời gian mở đơn tuyển thành viên đã kết thúc, xin cảm ơn bạn đã quan tâm. Hẹn gặp lại bạn trong lần tuyển thành viên tiếp theo"
+      */}
+      <h3 className="text-center text-gray-600 mt-10 font-semibold text-xl">
+        Thời gian mở đơn tuyển thành viên đã kết thúc, xin cảm ơn bạn đã quan tâm.
+        <br/>
+        Hẹn gặp lại bạn trong lần tuyển thành viên tiếp theo.
+      </h3>
+      
     </section>
   );
 }
